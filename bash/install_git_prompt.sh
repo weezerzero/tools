@@ -11,10 +11,10 @@ ln -s $PWD/git_prompt.sh ~/.git_prompt.sh
 
 # append script to ~/.bashrc so it launches when the shell launches.
 # only do this if it isn't already in bashrc
-if ! grep -Fxq ". ~/.git_prompt.sh" ~/.bashrc
+if ! grep -Fxq ". ~/.git_prompt.sh" ~/.bash_profile
 then
-	echo "Appending git_prompt.sh to ~/.bashrc..."
-	echo ". ~/.git_prompt.sh" >> ~/.bashrc
+	echo "Appending git_prompt.sh to ~/.bash_profile..."
+	echo ". ~/.git_prompt.sh" >> ~/.bash_profile
 fi
 
 # exec bashrc to refresh
